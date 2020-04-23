@@ -11,6 +11,7 @@ public class Hooks {
 
     @Before
     public void setup(Scenario scenario) {
+        System.out.println("Starting test automation");
         System.out.println("Test scenario :: " + scenario.getName());
         Driver.getDriver().manage().window().maximize();
 
